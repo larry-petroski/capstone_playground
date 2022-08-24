@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+  height: 97vh;
+}
+body::after {
+  content: '';
+  background: no-repeat center url(../../images/Background.svg);
+  background-size: cover;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  width: 40%;
+}
+nav > a {
+  padding-right: 2em;
+}
+form {
+  width: 40%;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Barlow' sans-serif;
+  font-weight: 700;
+}
+h2 {
+  font-family: 'Barlow' sans-serif;
+  font-weight: 500;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  margin-left: 5rem;
+  margin-right: 4.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+section > a {
+  text-align: center;
+  margin-bottom: 1em;
+}
+section > div {
+  display: flex;
+  justify-content: space-around;
+}
+.headings {
+  display: flex;
+  justify-content: center;
+}
+.register {
+  text-align: center;
+  margin-top: 2em;
+}
+.register button {
+  border: none;
+  border-radius: 10px;
+  padding: 1.5em 2em;
+}

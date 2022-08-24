@@ -1,0 +1,22 @@
+[
+	{
+		"GradeName": "Kindergarten",
+		"GradeId": "K",
+		"Description": "Kindergarten Teachers & Students"
+	},
+	{
+		"GradeName": "First",
+		"GradeId": "1",
+		"Description": "1st Grade Teachers & Students"
+    },
+    {
+		"GradeName": "Second",
+		"GradeId": "2",
+		"Description": "2nd Grade Teachers & Students" 
+	},
+	{
+		"GradeName": "Third",
+		"GradeId": "3",
+		"Description": "3rd Grade Teachers & Students"
+	}
+]

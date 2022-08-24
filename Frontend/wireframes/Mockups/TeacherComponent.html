@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Local Elementary's class registry" />
+    <title>Local Elementary</title>
+    <link rel="icon" type="image/x-icon" href="../images/school.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/TeacherStyles.css">
+  </head>
+  <body>
+    <header>
+      <!-- Reusable Nav Component-->
+      <nav>
+        <a class="homeNav" href="./HomeComponent.html">Home</a>
+        <a class="kindergartenNav" href="./TeacherComponent.html">K</a>
+        <a href="./TeacherComponent.html">1st</a>
+        <a href="./TeacherComponent.html">2nd</a>
+        <a href="./TeacherComponent.html">3rd</a>
+        <a href="./TeacherComponent.html">4th</a>
+        <a href="./TeacherComponent.html">5th</a>
+      </nav>
+      <form action="">
+        <input type="search" id="search" />
+        <button>Search</button>
+      </form>
+      <div>
+        <a href="./LoginComponent.html"
+          ><img
+            src="../images/lock_closed.png"
+            alt="Login"
+            width="35"
+            height="35"
+        /></a>
+        <a href="./HomeComponent.html"
+          ><img
+            src="../images/lock_open.png"
+            alt="Logout"
+            width="35"
+            height="35"
+        /></a>
+      </div>
+    </header>
+    <main>
+      <h1>Our Teachers</h1>
+      <table>
+        <tr>
+          <th>Teacher</th>
+          <th>Grade</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><a href="./TeacherInfoComponent.html">Teacher Name</a></td>
+          <td>K</td>
+          <td><img src="" alt="" /></td>
+          <td>
+            <a href="#"
+              ><img
+                src="../images/write.png"
+                alt="view teacher info"
+                width="35"
+                height="35"
+            /></a>
+          </td>
+          <td>
+            <img
+              src="../images/trash_can.png"
+              alt="delete teacher"
+              width="35"
+              height="35"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><a href="./TeacherInfoComponent.html">Teacher Name</a></td>
+          <td>K</td>
+          <td><img src="" alt="" /></td>
+          <td>
+            <a href="#"
+              ><img
+                src="../images/write.png"
+                alt="view teacher info"
+                width="35"
+                height="35"
+            /></a>
+          </td>
+          <td>
+            <img
+              src="../images/trash_can.png"
+              alt="delete teacher"
+              width="35"
+              height="35"
+            />
+          </td>
+        </tr>
+      </table>
+      <div class="buttons">
+        <button onclick="location.href='./AddEditTeacherComponent.html'">
+          Add Teacher
+        </button>
+        <button onclick="location.href='./AddEditStudentComponent.html'">
+          Register Student
+        </button>
+      </div>
+    </main>
+    <footer>
+      <small>&copy; Local School District</small>
+    </footer>
+  </body>
+</html>

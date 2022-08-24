@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Local Elementary's class registry" />
+    <title>Local Elementary</title>
+    <link rel="icon" type="image/x-icon" href="../images/school.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/HomeStyles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Reusable Nav Component-->
+      <nav>
+        <a class="homeNav" href="./HomeComponent.html">Home</a>
+        <a class="kindergartenNav" href="./TeacherComponent.html">K</a>
+        <a href="./TeacherComponent.html">1st</a>
+        <a href="./TeacherComponent.html">2nd</a>
+        <a href="./TeacherComponent.html">3rd</a>
+        <a href="./TeacherComponent.html">4th</a>
+        <a href="./TeacherComponent.html">5th</a>
+      </nav>
+      <form action="./TeacherComponent.html">
+        <input type="search" id="search" />
+        <button type="submit">Search</button>
+      </form>
+      <div>
+        <a href="./LoginComponent.html"
+          ><img
+            src="../images/lock_closed.png"
+            alt="Login"
+            width="35"
+            height="35"
+        /></a>
+        <a href="./HomeComponent.html"
+          ><img
+            src="../images/lock_open.png"
+            alt="Logout"
+            width="35"
+            height="35"
+        /></a>
+      </div>
+    </header>
+    <!-- Home Page Content-->
+    <main>
+      <h1 class="headings">Local Elementary School</h1>
+      <section>
+        <h2 class="headings">Welcome!</h2>
+        <p>
+          The 2022 - 2023 school year is fast approaching. The faculty here at
+          Local Elementary cannot wait for the kids to return. It is going to be
+          a fun filled year of learning and growing! In order to make a smooth
+          transition back into school life, we ask that parents please verify
+          their child has been enrolled. There are links below to view teachers
+          for each grade. Click a teacher to see which class your student will
+          be in. If your student is not registerd that's ok. There is a button
+          on the home page and the list of teachers page.
+        </p>
+      </section>
+      <section>
+        <a href="./TeacherComponent.html">Kindergarten</a>
+        <!-- Possible reuseable template for navbar and here-->
+        <div>
+          <a href="./TeacherComponent.html">1st Grade</a>
+          <a href="./TeacherComponent.html">2nd Grade</a>
+          <a href="./TeacherComponent.html">3rd Grade</a>
+          <a href="./TeacherComponent.html">4th Grade</a>
+          <a href="./TeacherComponent.html">5th Grade</a>
+        </div>
+      </section>
+      <div class="register">
+        <button onclick="location.href='./AddEditStudentComponent.html'">
+          Register Student
+        </button>
+      </div>
+    </main>
+    <footer>
+      <small>&COPY; Local School District</small>
+    </footer>
+  </body>
+</html>

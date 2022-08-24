@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+  height: 97vh;
+}
+
+body::after {
+  content: '';
+  background: no-repeat center url(../../images/Background.svg);
+  background-size: cover;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 40%;
+}
+
+nav > a {
+  padding-right: 2em;
+}
+
+form {
+  width: 40%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.classRoster {
+  display: flex;
+}
+
+.teacherInfo {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.teacher {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+aside {
+  margin-top: 35px;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 2em -0.5em #aaa;
+  font-size: 0.8em;
+}
+
+.students {
+  width: 50%;
+}
+
+figure {
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.5em;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2em -0.5em #aaa;
+  position: relative;
+  border-radius: 5px;
+}
+
+figure img {
+  border-radius: 5px;
+}
+
+figure figcaption {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: right;
+  text-shadow: 0 0 1em #555;
+  text-shadow: 0 0 0.5em white;
+  position: absolute;
+  right: -1rem;
+  bottom: -1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li {
+  font-style: italic;
+  padding: 1em 0;
+}
+
+h1 {
+  margin: 0;
+}

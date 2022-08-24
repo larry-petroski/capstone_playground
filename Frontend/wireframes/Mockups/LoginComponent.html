@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Local Elementary's class registry" />
+    <title>Local Elementary</title>
+    <link rel="icon" type="image/x-icon" href="../images/school.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/LoginStyles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <!-- Reusable Nav Component-->
+      <nav>
+        <a class="homeNav" href="./HomeComponent.html">Home</a>
+        <a class="kindergartenNav" href="./TeacherComponent.html">K</a>
+        <a href="./TeacherComponent.html">1st</a>
+        <a href="./TeacherComponent.html">2nd</a>
+        <a href="./TeacherComponent.html">3rd</a>
+        <a href="./TeacherComponent.html">4th</a>
+        <a href="./TeacherComponent.html">5th</a>
+      </nav>
+      <form action="./TeacherComponent.html">
+        <input type="search" id="search" />
+        <button type="submit">Search</button>
+      </form>
+      <div>
+        <a href="./LoginComponent.html"
+          ><img
+            src="../images/lock_closed.png"
+            alt="Login"
+            width="35"
+            height="35"
+        /></a>
+        <a href="./HomeComponent.html"
+          ><img
+            src="../images/lock_open.png"
+            alt="Logout"
+            width="35"
+            height="35"
+        /></a>
+      </div>
+    </header>
+    <!-- Home Page Content-->
+    <main style="padding: 7em 0; display: flex; justify-content: center;">
+      <section style="display: flex; flex-direction: column; max-height: 650px; background-color: #fff; border-radius: 10px; padding: 2rem; gap: 10px;">
+        <h3 style="text-align: center;">Sign In</h3>
+        <div>
+          <span class="fa fa-user"></span>
+          <input type="text" name="userName" id="userName">
+        </div>
+        <div>
+          <span class="fa fa-lock"></span>
+          <input type="password" name="pwd" id="pwd">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="#" style="text-align: center;">forgot password?</a>
+          <button type="submit">Login</button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 30px;">
+          <small style="text-align: center;">Don't have an account?</small>
+          <button>Create Account</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small>&COPY; Local School District</small>
+    </footer>
+  </body>
+</html>

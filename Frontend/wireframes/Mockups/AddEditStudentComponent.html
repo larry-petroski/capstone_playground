@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Local Elementary's class registry" />
+    <title>Local Elementary</title>
+    <link rel="icon" type="image/x-icon" href="../images/school.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/AddEditStudentStyles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="homeNav" href="./HomeComponent.html">Home</a>
+        <a class="kindergartenNav" href="./TeacherComponent.html">K</a>
+        <a href="./TeacherComponent.html">1st</a>
+        <a href="./TeacherComponent.html">2nd</a>
+        <a href="./TeacherComponent.html">3rd</a>
+        <a href="./TeacherComponent.html">4th</a>
+        <a href="./TeacherComponent.html">5th</a>
+      </nav>
+      <form action="./TeacherComponent.html" class="header-form">
+        <input type="search" id="search" />
+        <button type="submit">Search</button>
+      </form>
+      <div>
+        <a href="./LoginComponent.html"
+          ><img
+            src="../images/lock_closed.png"
+            alt="Login"
+            width="35"
+            height="35"
+        /></a>
+        <a href="./HomeComponent.html"
+          ><img
+            src="../images/lock_open.png"
+            alt="Logout"
+            width="35"
+            height="35"
+        /></a>
+      </div>
+    </header>
+    <main>
+      <fieldset>
+        <legend>Add / Edit Student</legend>
+        <form action="" id="form-container">
+          <div class="form-row">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" />
+          </div>
+          <div class="form-row">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" />
+          </div>
+          <div class="form-row">
+            <label for="grade">Grade</label>
+            <select id="grade">
+              <option value="K">Kindergarten</option>
+              <option value="1">1st</option>
+              <option value="2">2nd</option>
+              <option value="3">3rd</option>
+              <option value="4">4th</option>
+              <option value="5">5th</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="teacher">Teacher <strong>*</strong></label>
+            <input type="text" id="teacher" disabled placeholder="teacher" />
+          </div>
+          <div class="form-row">
+            <label for="email">Parent Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Parent Phone</label>
+            <input type="tel" id="phone" />
+          </div>
+          <div class="form-buttons">
+            <button>Cancel</button>
+            <button>Submit</button>
+            <button>Delete</button>
+          </div>
+        </form>
+      </fieldset>
+      <p><strong>* A teacher will be selected upon saving input</strong></p>
+    </main>
+    <footer>
+      <small>&copy; Local School District</small>
+    </footer>
+  </body>
+</html>

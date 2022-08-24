@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+  height: 97vh;
+}
+body::after {
+  content: '';
+  background: no-repeat center url(../../images/Background.svg);
+  background-size: cover;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  width: 40%;
+}
+nav > a {
+  padding-right: 2em;
+}
+form {
+  width: 40%;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+h1,
+table,
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+table,
+.buttons {
+  margin-top: 2rem;
+}
+td {
+  text-align: center;
+}
+.buttons > button {
+  margin-right: 10px;
+}

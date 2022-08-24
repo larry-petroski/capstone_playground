@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Elementary</title>
+    <link rel="icon" type="image/x-icon" href="../images/school.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/TeacherInfoStyles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="homeNav" href="./HomeComponent.html">Home</a>
+        <a class="kindergartenNav" href="./TeacherComponent.html">K</a>
+        <a href="./TeacherComponent.html">1st</a>
+        <a href="./TeacherComponent.html">2nd</a>
+        <a href="./TeacherComponent.html">3rd</a>
+        <a href="./TeacherComponent.html">4th</a>
+        <a href="./TeacherComponent.html">5th</a>
+      </nav>
+      <form action="./TeacherComponent.html">
+        <input type="search" id="search" />
+        <button type="submit">Search</button>
+      </form>
+      <div>
+        <a href="./LoginComponent.html"
+          ><img
+            src="../images/lock_closed.png"
+            alt="Login"
+            width="35"
+            height="35"
+        /></a>
+        <a href="./HomeComponent.html"
+          ><img
+            src="../images/lock_open.png"
+            alt="Logout"
+            width="35"
+            height="35"
+        /></a>
+      </div>
+    </header>
+    <main>
+      <div class="classRoster">
+        <div class="teacherInfo">
+          <div class="teacher">
+            <figure>
+              <img src="../images/Westly.jpg" alt="" />
+              <figcaption>Teacher Name</figcaption>
+            </figure>
+          </div>
+          <aside>
+            <p>Grade: </p>
+            <p>Capacity: </p>
+            <p>Contact: </p>
+          </aside>
+        </div>
+        <div class="students">
+          <h1>Students</h1>
+          <ul>
+            <li>Student 1</li>
+            <li>Student 2</li>
+            <li>Student 3</li>
+            <li>Student 4</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <small>&copy; Local School District</small>
+    </footer>
+  </body>
+</html>
