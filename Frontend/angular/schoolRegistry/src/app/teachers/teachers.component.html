@@ -1,1 +1,8 @@
-<p>teachers works!</p>
+<section class="flex flex-wrap justify-content-center">
+    <h1>Our Teachers:</h1>
+    <div class="flex flex-wrap justify-content-center gap-3">
+        <div *ngFor="let teacher of teachers" style="flex: 0 1 25%">
+            <sr-teacher-card [teacher]="teacher"></sr-teacher-card>
+        </div>
+    </div>
+</section>

@@ -34,15 +34,22 @@ section > a {
   text-align: center;
   margin-bottom: 1em;
 }
+
+section > a:last-of-type {
+  margin-top: 1em;
+}
+
 section > div {
   display: flex;
   justify-content: space-around;
-}
-.registerBtn {
-    text-align: center;
-    margin-top: 2em;
+  margin: 1.5em 0;
 }
 
-section:last-of-type > div {
-    margin-top: 1.5em;
+.registerBtn {
+    text-align: center;
+    margin-top: 1em;
 }
+
+/* section:last-of-type > div {
+    margin-top: 1.5em;
+} */
