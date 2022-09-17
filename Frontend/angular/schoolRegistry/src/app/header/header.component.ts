@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { MenuItem } from 'primeng/api/menuitem';
 
+import { Grade } from '../models/Grade';
+import { GradesService } from '../services/grades.service';
+
 @Component({
   selector: 'sr-header',
   templateUrl: './header.component.html',
@@ -9,35 +12,37 @@ import { MenuItem } from 'primeng/api/menuitem';
 })
 export class HeaderComponent implements OnInit {
 
-  grades!: MenuItem[];
+  menus!: MenuItem[];
+  grades!: Grade[];
 
-  constructor() { }
+  constructor(private gradesSvc: GradesService) { }
 
   ngOnInit(): void {
-    this.grades = [
-      {
-        label: 'Home',
-        icon: 'pi pi-home'
+    this.fetchGrades();
+  }
+
+  fetchGrades(): void {
+    this.gradesSvc.getGrades<Grade[]>().subscribe({
+      next: grade => {
+        this.grades = grade;
+        this.setMenuItems(this.grades);
       },
-      {
-        label: '(K) Kinder...',
-      },      
-      {
-        label: '(1) First',
-      },
-      {
-        label: '(2) Second',
-      },
-      {
-        label: '(3) Third',
-      },
-      {
-        label: '(4) Fourth',
-      },
-      {
-        label: '(5) Fifth',
-      }
+      error: err => console.error(err),
+      complete: () => {}
+    });
+  }
+
+  setMenuItems(grade:any): void {
+    const homeMenu: MenuItem =  { label: 'Home', icon: 'pi pi-home', routerLink: [''] };
+    
+    this.menus = [
+      homeMenu
     ];
+
+    grade.forEach((grade: any) => {
+      const item: MenuItem = { label: grade.Heading, routerLink: ['teachers', grade.GradeId] };
+      this.menus.push(item);
+    });
   }
 
 }

@@ -2,21 +2,21 @@
 	{
 		"GradeName": "Kindergarten",
 		"GradeId": "K",
-		"Description": "Kindergarten Teachers & Students"
+		"Description": "Kindergarten"
 	},
 	{
 		"GradeName": "First",
 		"GradeId": "1",
-		"Description": "1st Grade Teachers & Students"
+		"Description": "1st Grade"
     },
     {
 		"GradeName": "Second",
 		"GradeId": "2",
-		"Description": "2nd Grade Teachers & Students" 
+		"Description": "2nd Grade"
 	},
 	{
 		"GradeName": "Third",
 		"GradeId": "3",
-		"Description": "3rd Grade Teachers & Students"
+		"Description": "3rd Grade"
 	}
 ]

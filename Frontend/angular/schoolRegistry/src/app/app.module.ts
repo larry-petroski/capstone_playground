@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { RippleModule } from 'primeng/ripple';
 import {MenubarModule} from 'primeng/menubar';
@@ -9,6 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 
+import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TeachersComponent } from './teachers/teachers.component';
@@ -32,6 +34,8 @@ import { TeacherCardComponent } from './teachers/teacher-card/teacher-card.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
     RippleModule,
     MenubarModule,
     InputTextModule,
